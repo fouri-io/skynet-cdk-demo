@@ -12,16 +12,28 @@
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.75.0",
+    "@aws/dynamodb-auto-marshaller": "^0.7.1",
+    "@aws/dynamodb-batch-iterator": "^0.7.1",
+    "@aws/dynamodb-data-mapper": "^0.7.3",
+    "@aws/dynamodb-data-marshaller": "^0.7.3",
+    "@aws/dynamodb-expressions": "^0.7.3",
+    "@aws/dynamodb-query-iterator": "^0.7.1",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
+    "aws-cdk": "1.75.0",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
-    "aws-cdk": "1.75.0",
     "ts-node": "^9.0.0",
-    "typescript": "~3.9.7"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-dynamodb": "^1.75.0",
+    "@aws-cdk/aws-ec2": "^1.75.0",
+    "@aws-cdk/aws-ecs": "^1.75.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.75.0",
+    "@aws-cdk/aws-iam": "^1.75.0",
     "@aws-cdk/core": "1.75.0",
+    "@aws/dynamodb-data-mapper-annotations": "^0.7.3",
     "source-map-support": "^0.5.16"
   }
 }
