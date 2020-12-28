@@ -1,8 +1,15 @@
-# Welcome to your CDK TypeScript project!
+# Welcome to Skynet CDK Demo
+#### Prerequisistes
+* AWS Account with an IAM user with Infrastructure creation permissions
+* AWS CLI Installed
+* CDK Installed
 
-This is a blank project for TypeScript development with CDK.
+After cloning repository, you will need to do an initial npm install
+`npm install`
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+
+
+
 
 ## Useful commands
 

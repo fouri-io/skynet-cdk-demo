@@ -5,7 +5,7 @@ import * as iam from "@aws-cdk/aws-iam";
 import * as dynamodb from "@aws-cdk/aws-dynamodb";
 import * as ecs_patterns from "@aws-cdk/aws-ecs-patterns";
 
-export class FouriCdkDemoStack extends cdk.Stack {
+export class SkynetCdkDemoStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 

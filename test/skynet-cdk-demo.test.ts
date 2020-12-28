@@ -1,11 +1,11 @@
 import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import * as FouriCdkDemo from '../lib/fouri-cdk-demo-stack';
+import * as SkynetCdkDemo from '../lib/skynet-cdk-demo-stack';
 
 test('Empty Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new FouriCdkDemo.FouriCdkDemoStack(app, 'MyTestStack');
+    const stack = new SkynetCdkDemo.SkynetCdkDemoStack(app, 'MyTestStack');
     // THEN
     expectCDK(stack).to(matchTemplate({
       "Resources": {}

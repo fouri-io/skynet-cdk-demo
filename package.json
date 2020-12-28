@@ -1,8 +1,8 @@
 {
-  "name": "fouri-cdk-demo",
+  "name": "skynet-cdk-demo",
   "version": "0.1.0",
   "bin": {
-    "fouri-cdk-demo": "bin/fouri-cdk-demo.js"
+    "fouri-cdk-demo": "bin/skynet-cdk-demo.js"
   },
   "scripts": {
     "build": "tsc",
@@ -18,20 +18,20 @@
     "@aws/dynamodb-data-marshaller": "^0.7.3",
     "@aws/dynamodb-expressions": "^0.7.3",
     "@aws/dynamodb-query-iterator": "^0.7.1",
-    "@types/jest": "^26.0.10",
+    "@types/jest": "^26.0.19",
     "@types/node": "10.17.27",
     "aws-cdk": "1.75.0",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
-    "ts-node": "^9.0.0",
+    "ts-node": "^9.1.1",
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/aws-dynamodb": "^1.75.0",
-    "@aws-cdk/aws-ec2": "^1.75.0",
-    "@aws-cdk/aws-ecs": "^1.75.0",
-    "@aws-cdk/aws-ecs-patterns": "^1.75.0",
-    "@aws-cdk/aws-iam": "^1.75.0",
+    "@aws-cdk/aws-dynamodb": "^1.80.0",
+    "@aws-cdk/aws-ec2": "^1.80.0",
+    "@aws-cdk/aws-ecs": "^1.80.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.80.0",
+    "@aws-cdk/aws-iam": "^1.80.0",
     "@aws-cdk/core": "1.75.0",
     "@aws/dynamodb-data-mapper-annotations": "^0.7.3",
     "source-map-support": "^0.5.16"
