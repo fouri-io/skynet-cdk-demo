@@ -10,7 +10,7 @@ export class SkynetCdkDemoStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
-    const vpc = new ec2.Vpc(this, "FouriVPC", {
+    const vpc = new ec2.Vpc(this, "SkynetVPC", {
       maxAzs: 3, // Default is all AZs in region
       cidr: "10.0.0.0/24"
     });

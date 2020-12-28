@@ -4,18 +4,36 @@
 * AWS CLI Installed
 * CDK Installed
 
-After cloning repository, you will need to do an initial npm install
+After cloning repository, you will need to do an initial npm install to get npm packages
 `npm install`
 
+Now build the package, creating js files from the typescript
+`npm run build`
 
+Ok, now let's verify CDK and build our infrasturcture
+`cdk synth`
+`cdk deploy` // You will get a verification message, choose 'Y', hit enter to deploy
 
+After all the installing is complete, you should see something like the following:
+SkynetCdkDemoStack: deploying...
+SkynetCdkDemoStack: creating CloudFormation changeset...
+[██████████████████████████████████████████████████████████] (41/41)
 
+You will also have some outputs giving you an http endpoint to hit:
+Go ahead and try out your new service
+`http://<your output address here>:4000/ping` // You should receive 'pong' back
 
-## Useful commands
+Now let's go ahead and initialize Skynet and get it started on it's path towards global domination
+```
+http://<your output address here>:4000/initialize
+http://<your output address here>:4000/missions
+```
+Now that we have stretched our legs, lets hit Dynamo and make sure all the plumbing is working
+```
+// Seed some info in Dynamo and retrieve it
+http://<your output address here>:4000/seedTargets
+http://<your output address here>:4000/targets
+```
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+That is it, the entire stack is functioning -- VPC, Subnets, Fargate Containers, Dynamo Table, with all the plumbing.
+
